@@ -41,6 +41,6 @@ const options = Object.entries(languageCodes).map(([_, option]) => option)
 
 const model = computed({
   get () { return languageCodes[locale.value]  },
-  set (value) { return locale.value = languageName[value] },
+  set (value) { locale.value = languageName[value] },
 })
 </script>
